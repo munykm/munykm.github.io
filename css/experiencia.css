@@ -121,4 +121,8 @@
   .empresa {
     grid-template-columns: 1fr;
   }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
 }
