@@ -1,0 +1,124 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  color: #525252;
+  max-width: 40ch;
+  margin-bottom: 60px;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 24px;
+  left: -48px;
+  color: #525252;
+  font-size: 14px;
+  text-align: center;
+}
+
+#ano {
+  position: absolute;
+  top: 24px;
+  left: -70px;
+  color: #525252;
+  font-size: 14px;
+  text-align: center;
+}
+
+.empresa::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -3px;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.empresa-titulo {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.empresa-texto {
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.habilidades li {
+  background: #ffffff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    font-size: 48px;
+    color: #414141;
+    word-break: keep-all;
+    text-transform: capitalize;
+  }
+
+  .experiencia-texto {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .empresa-ano {
+    position: initial;
+    text-align: start;
+    margin-top: 10px;
+  }
+
+  #ano {
+    position: initial;
+    text-align: start;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
